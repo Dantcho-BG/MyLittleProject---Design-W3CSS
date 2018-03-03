@@ -18,14 +18,34 @@
                 <a href="./projects" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Projects</a>
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
-                <a href="./profile" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Dantcho</a>
+                <div class="w3-dropdown-click w3-right">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                        Dantcho
+                    </button>
+                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                        <form id="logout-form" action="logout" method="POST" style="display: none;">
+                        </form>
+                    </div>
+                </div>
             </div>
             <div id="navigation-elements" class="w3-hide w3-hide-large w3-hide-medium">
                 <a href="./index" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Home</a>
                 <a href="./projects" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Projects</a>
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
-                <a href="./profile" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Dantcho</a>
+                <div class="w3-dropdown-click w3-mobile">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                        Dantcho
+                    </button>
+                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                        <form id="logout-form" action="logout" method="POST" style="display: none;">
+                        </form>
+                    </div>
+                </div>
             </div>
             <a id="navigation-collapse-button" href="javascript:void(0)" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile w3-hide-large w3-hide-medium" onclick="collapseNavigationBar()">Menu</a>
         </nav>
@@ -37,12 +57,12 @@
                     </header>
                     <form class="w3-container">
                         <div class="w3-section">
-                            <label class="w3-text-teal">Username</label>
-                            <input class="w3-input" type="text">
+                            <label class="w3-text-teal">Email</label>
+                            <input class="w3-input" type="email">
                         </div>
                         <div class="w3-section">
                             <label class="w3-text-teal">Password</label>
-                            <input class="w3-input" type="text">
+                            <input class="w3-input" type="password">
                         </div>
                         <div class="w3-section w3-half">
                             <input class="w3-check" type="checkbox">
@@ -50,6 +70,16 @@
                         </div>
                         <div class="w3-section w3-half">
                             <input class="w3-btn w3-blue w3-right" value="Login" type="submit">
+                        </div>
+                        <div class="w3-section w3-half">
+                          <a href="./forgot-password.html">
+                              Forgot Your Password?
+                          </a>
+                        </div>
+                        <div class="w3-section w3-half">
+                          <a class="w3-right" href="./register.html">
+                              Don't Have An Acount?
+                          </a>
                         </div>
                     </form>
                 </div>

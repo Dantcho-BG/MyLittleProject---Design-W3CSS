@@ -18,3 +18,12 @@ function changeTextOpenedState() {
     var x = document.getElementById("navigation-collapse-button");
     x.innerHTML = "Close";
 }
+
+function userProfileButtonDropdownToggle() {
+    var x = document.getElementById("user-profile-dropdown-card");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}

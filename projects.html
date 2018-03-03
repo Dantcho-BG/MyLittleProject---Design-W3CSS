@@ -18,14 +18,34 @@
                 <a href="./projects" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Projects</a>
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
-                <a href="./profile" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Dantcho</a>
+                <div class="w3-dropdown-click w3-right">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                        Dantcho
+                    </button>
+                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                        <form id="logout-form" action="logout" method="POST" style="display: none;">
+                        </form>
+                    </div>
+                </div>
             </div>
             <div id="navigation-elements" class="w3-hide w3-hide-large w3-hide-medium">
                 <a href="./index" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Home</a>
                 <a href="./projects" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Projects</a>
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
-                <a href="./profile" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Dantcho</a>
+                <div class="w3-dropdown-click w3-mobile">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                        Dantcho
+                    </button>
+                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                        <form id="logout-form" action="logout" method="POST" style="display: none;">
+                        </form>
+                    </div>
+                </div>
             </div>
             <a id="navigation-collapse-button" href="javascript:void(0)" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile w3-hide-large w3-hide-medium" onclick="collapseNavigationBar()">Menu</a>
         </nav>
@@ -63,8 +83,7 @@
             </div>
             <div class="w3-container w3-mobile w3-col m6 l4 w3-margin-bottom">
                 <div class="w3-card w3-white w3-hover-shadow">
-                    <!--<img src="http://www.vwgolfmk2.co.uk/cars-for-sale/wp-content/uploads/2017/05/YCVZ1671.jpg" alt="Norway" style="width:100%">-->
-                    <img src="ImagePreview.png" alt="Norway" style="width:100%">
+                    <img src="MyLittleProject.png" alt="Norway" style="width:100%">
                     <header class="w3-container w3-blue">
                         <div>Header</div>
                     </header>
