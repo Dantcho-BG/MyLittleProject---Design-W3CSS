@@ -18,7 +18,7 @@
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
                 <div class="w3-dropdown-click w3-right">
-                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle('user-profile-dropdown-card')">
                         Dantcho
                     </button>
                     <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -35,12 +35,12 @@
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
                 <div class="w3-dropdown-click w3-mobile">
-                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle('user-profile-dropdown-card-mobile')">
                         Dantcho
                     </button>
-                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
-                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                    <div id="user-profile-dropdown-card-mobile" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Logout</a>
                         <form id="logout-form" action="logout" method="POST" style="display: none;">
                         </form>
                     </div>
@@ -62,7 +62,7 @@
                 <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="w3-button w3-display-right w3-black" onclick="plusDivs(+1)">&#10095;</button>
             </div>-->
-            <div class="w3-container w3-mobile w3-margin-bottom">
+            <div class="w3-container w3-content w3-mobile w3-margin-bottom">
                 <div class="w3-card w3-white w3-hover-shadow">
                     <header class="w3-container w3-blue">
                         <div>Header</div>
