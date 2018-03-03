@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>MyLittleProject - Design (W3.CSS)</title>
+        <script src="js/navigation-bar.js"></script>
+    </head>
+    <body>
+        <header class="w3-container w3-row w3-blue w3-center">
+            <h1 class="w3-large">My Little Project - Design (W3.CSS)</h1>
+        </header>
+        <nav class="w3-bar w3-black w3-row">
+            <div class="w3-hide-small">
+                <a href="./index" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Home</a>
+                <a href="./projects" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Projects</a>
+                <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
+                <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
+                <div class="w3-dropdown-click w3-right">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                        Dantcho
+                    </button>
+                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                        <form id="logout-form" action="logout" method="POST" style="display: none;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="navigation-elements" class="w3-hide w3-hide-large w3-hide-medium">
+                <a href="./index" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Home</a>
+                <a href="./projects" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Projects</a>
+                <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
+                <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
+                <div class="w3-dropdown-click w3-mobile">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                        Dantcho
+                    </button>
+                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                        <form id="logout-form" action="logout" method="POST" style="display: none;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <a id="navigation-collapse-button" href="javascript:void(0)" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile w3-hide-large w3-hide-medium" onclick="collapseNavigationBar()">Menu</a>
+        </nav>
+        <section class="w3-container w3-dark-grey padding-top-16 w3-row">
+            <div class="w3-container w3-content w3-mobile w3-margin-bottom">
+                <div class="w3-card w3-white w3-hover-shadow">
+                    <header class="w3-container w3-blue">
+                        <h2>Register</h2>
+                    </header>
+                    <form class="w3-container">
+                        <div class="w3-section">
+                            <label class="w3-text-teal">Username</label>
+                            <input class="w3-input" type="text">
+                        </div>
+                        <div class="w3-section">
+                            <div class="w3-panel w3-red">
+                              <p>Error Message</p>
+                            </div>
+                            <label class="w3-text-red">Email</label>
+                            <input class="w3-input w3-pale-red" placeholder="Example of an invalid field" type="email">
+                        </div>
+                        <div class="w3-section">
+                            <label class="w3-text-teal">Password</label>
+                            <input class="w3-input" type="password">
+                        </div>
+                        <div class="w3-section">
+                            <label class="w3-text-teal">Confirm Password</label>
+                            <input class="w3-input" type="password">
+                        </div>
+                        <div class="w3-section w3-right">
+                            <input class="w3-btn w3-blue" value="Register" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="w3-container w3-black w3-padding w3-row">
+            <div class="w3-bar">
+                <div class="w3-center">Copyright <a href="https://github.com/Dantcho-BG/MyLittleProject" target="_blank">My Little Project</a> 2018</div>
+            </div>
+        </footer>
+    </body>
+</html>
