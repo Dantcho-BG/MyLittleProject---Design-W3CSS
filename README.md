@@ -4,7 +4,7 @@ This design is used in the MyLittleProject website as the default design when th
 
 ## Built With
 
-* [W3.CSS](http://www.dropwizard.io/1.0.2/docs/) - The CSS framework used
+* [W3.CSS](https://www.w3schools.com/w3css/w3css_downloads.asp) - The CSS framework used
 
 ## Authors
 
