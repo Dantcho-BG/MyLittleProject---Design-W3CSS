@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/main.css">
         <title>MyLittleProject - Design (W3.CSS)</title>
-        <script src="js/navigation-bar.js"></script>
     </head>
     <body>
         <header class="w3-container w3-row w3-blue w3-center">
@@ -19,7 +18,7 @@
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
                 <div class="w3-dropdown-click w3-right">
-                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle('user-profile-dropdown-card')">
                         Dantcho
                     </button>
                     <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -36,12 +35,12 @@
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
                 <div class="w3-dropdown-click w3-mobile">
-                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle('user-profile-dropdown-card-mobile')">
                         Dantcho
                     </button>
-                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
-                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                    <div id="user-profile-dropdown-card-mobile" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Logout</a>
                         <form id="logout-form" action="logout" method="POST" style="display: none;">
                         </form>
                     </div>
@@ -102,4 +101,5 @@
             </div>
         </footer>
     </body>
+    <script src="js/navigation-bar.js"></script>
 </html>
