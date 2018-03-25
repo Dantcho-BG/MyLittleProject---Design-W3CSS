@@ -21,7 +21,7 @@
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
                 <div class="w3-dropdown-click w3-right">
-                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle('user-profile-dropdown-card')">
                         Dantcho
                     </button>
                     <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -38,12 +38,12 @@
                 <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
                 <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
                 <div class="w3-dropdown-click w3-mobile">
-                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle()">
+                    <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle('user-profile-dropdown-card-mobile')">
                         Dantcho
                     </button>
-                    <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
-                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                    <div id="user-profile-dropdown-card-mobile" class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Profile</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Logout</a>
                         <form id="logout-form" action="logout" method="POST" style="display: none;">
                         </form>
                     </div>
@@ -52,8 +52,15 @@
             <a id="navigation-collapse-button" href="javascript:void(0)" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile w3-hide-large w3-hide-medium" onclick="collapseNavigationBar()">Menu</a>
         </nav>
         <section class="w3-container w3-dark-grey padding-top-16 w3-row">
+            <div class="w3-container w3-content w3-mobile">
+                <div class="w3-panel w3-green w3-display-container margin-top-0">
+                    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h3>Example Alert!</h3>
+                    <p>This is an example of an alert.</p>
+                </div>
+            </div>
             <div class="w3-container w3-content w3-mobile w3-margin-bottom">
-                <div class="w3-card w3-white w3-hover-shadow">
+                <div class="w3-card w3-white">
                     <header class="w3-container w3-blue">
                         <h2>Profile</h2>
                     </header>
@@ -79,15 +86,15 @@
                                 <input class="w3-input" type="text">
                             </div>
                             <div class="w3-section">
-                                <label class="w3-text-teal">Old Password</label>
-                                <input class="w3-input" type="text">
-                            </div>
-                            <div class="w3-section">
                                 <label class="w3-text-teal">New Password</label>
                                 <input class="w3-input" type="text">
                             </div>
                             <div class="w3-section">
                                 <label class="w3-text-teal">Confirm New Password</label>
+                                <input class="w3-input" type="text">
+                            </div>
+                            <div class="w3-section">
+                                <label class="w3-text-teal">Current Password</label>
                                 <input class="w3-input" type="text">
                             </div>
                             <div class="w3-section w3-right">
