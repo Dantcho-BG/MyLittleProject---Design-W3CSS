@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/main.css">
         <title>MyLittleProject - Design (W3.CSS)</title>
-        <script src="js/navigation-bar.js"></script>
     </head>
     <body>
         <header class="w3-container w3-row w3-blue w3-center">
@@ -25,8 +24,6 @@
                     <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
                         <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
                         <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
-                        <form id="logout-form" action="logout" method="POST" style="display: none;">
-                        </form>
                     </div>
                 </div>
             </div>
@@ -42,12 +39,11 @@
                     <div id="user-profile-dropdown-card-mobile" class="w3-dropdown-content w3-bar-block w3-card-4">
                         <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Profile</a>
                         <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Logout</a>
-                        <form id="logout-form" action="logout" method="POST" style="display: none;">
-                        </form>
                     </div>
                 </div>
             </div>
             <a id="navigation-collapse-button" href="javascript:void(0)" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile w3-hide-large w3-hide-medium" onclick="collapseNavigationBar()">Menu</a>
+            <form id="logout-form" action="logout" method="POST" style="display: none;"></form>
         </nav>
         <section class="w3-container w3-dark-grey padding-top-16 w3-row">
             <div class="w3-container w3-content w3-mobile w3-margin-bottom">
@@ -57,7 +53,7 @@
                     </header>
                     <form class="w3-container">
                         <div class="w3-section">
-                            <label class="w3-text-teal">Email</label>
+                            <label class="w3-text-teal">E-Mail Address</label>
                             <input class="w3-input" type="email">
                         </div>
                         <div class="w3-section">
@@ -69,14 +65,16 @@
                             <label>Remember Me</label>
                         </div>
                         <div class="w3-section w3-half">
-                            <input class="w3-btn w3-blue w3-right" value="Login" type="submit">
+                            <button type="submit" class="w3-btn w3-blue w3-right w3-mobile">
+                                Login
+                            </button>
                         </div>
-                        <div class="w3-section w3-half">
+                        <div class="w3-section w3-half w3-col s6">
                           <a href="./forgot-password.html">
                               Forgot Your Password?
                           </a>
                         </div>
-                        <div class="w3-section w3-half">
+                        <div class="w3-section w3-half w3-col s6">
                           <a class="w3-right" href="./register.html">
                               Don't Have An Acount?
                           </a>
@@ -91,4 +89,5 @@
             </div>
         </footer>
     </body>
+    <script src="js/navigation-bar.js"></script>
 </html>
