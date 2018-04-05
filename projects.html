@@ -24,8 +24,6 @@
                     <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
                         <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
                         <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
-                        <form id="logout-form" action="logout" method="POST" style="display: none;">
-                        </form>
                     </div>
                 </div>
             </div>
@@ -41,15 +39,14 @@
                     <div id="user-profile-dropdown-card-mobile" class="w3-dropdown-content w3-bar-block w3-card-4">
                         <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Profile</a>
                         <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Logout</a>
-                        <form id="logout-form" action="logout" method="POST" style="display: none;">
-                        </form>
                     </div>
                 </div>
             </div>
             <a id="navigation-collapse-button" href="javascript:void(0)" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile w3-hide-large w3-hide-medium" onclick="collapseNavigationBar()">Menu</a>
+            <form id="logout-form" action="logout" method="POST" style="display: none;"></form>
         </nav>
         <section class="w3-container w3-dark-grey padding-top-16 w3-row">
-            <div class="w3-panel w3-green w3-display-container margin-top-0">
+            <div class="w3-panel w3-mobile w3-green w3-display-container margin-top-0 w3-card-4">
                 <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
                 <h3>Example Alert!</h3>
                 <p>This is an example of an alert.</p>
