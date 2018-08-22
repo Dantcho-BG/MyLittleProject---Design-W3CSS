@@ -63,14 +63,53 @@
                         <div class="padding-top-16">
                             <div class="w3-display-container w3-center w3-text-black">
                                 <img id="profile-image" class="cursor-pointer w3-image w3-circle w3-border padding-5" src="http://www.vwgolfmk2.co.uk/cars-for-sale/wp-content/uploads/2017/05/YCVZ1671.jpg" style="width: 150px; height: 150px;">
-                                <div id="upload-image-text" class="cursor-pointer w3-display-middle w3-xlarge w3-hide">Upload</div>
-                                <input type="file" id="upload-image-input" class="w3-hide">
+                                <div id="change-image-text" class="cursor-pointer w3-display-middle w3-xlarge w3-hide">Change</div>
                             </div>
                             <div class="w3-center w3-text-teal">
                                 <h3>Dantcho</h3>
                                 <p>dantcho.bg@gmail.com</p>
                             </div>
                         </div>
+                        <!-- Profile Image Change Modal -->
+                        <div id="profile-image-change-modal" class="w3-modal w3-animate-opacity">
+                          <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                            <header class="w3-container w3-blue">
+                              <span onclick="document.getElementById('profile-image-change-modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                              <h2>Change Profile Image</h2>
+                            </header>
+                            <div class="w3-container">
+                              <div class="w3-display-container w3-center w3-text-black padding-top-16">
+                                  <img id="modal-profile-image" class="cursor-pointer w3-image w3-circle w3-border padding-5" src="http://www.vwgolfmk2.co.uk/cars-for-sale/wp-content/uploads/2017/05/YCVZ1671.jpg" style="width: 150px; height: 150px;">
+                                  <div id="upload-image-text" class="cursor-pointer w3-display-middle w3-xlarge w3-hide padding-top-16">Upload</div>
+                                  <input type="file" id="image-upload-input" class="w3-hide">
+                              </div>
+                              <div class="w3-display-container w3-center w3-text-black padding-top-16">
+                                <!-- Buttons for choosing between using an uploaded picture or gravatar picture
+                                  <p>
+                                    <input class="w3-radio" type="radio" name="gender" value="male" checked>
+                                    <label>Upload</label>
+                                    <input class="w3-radio" type="radio" name="gender" value="male">
+                                    <label>Gravatar</label>
+                                  </p>
+                                -->
+                                  <button type="submit" class="w3-btn w3-blue w3-mobile">
+                                      Reset Profile Image
+                                  </button>
+                              </div>
+                            </div>
+                            <footer class="w3-container">
+                              <div class="w3-section w3-right w3-mobile">
+                                  <button id="profile-image-modal-discard-button" class="w3-btn w3-red w3-mobile">
+                                      Discard
+                                  </button>
+                                  <button type="submit" class="w3-btn w3-blue w3-mobile">
+                                      Save
+                                  </button>
+                              </div>
+                            </footer>
+                          </div>
+                        </div>
+                        <!-- Profile Image Change Modal -->
                         <form>
                             <div class="w3-section">
                                 <label class="w3-text-teal">Username</label>
