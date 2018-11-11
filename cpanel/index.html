@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <title>MyLittleProject - Design (W3.CSS)</title>
+    </head>
+    <body>
+        <!-- Side Navbar -->
+        <div id="side-navbar" class="w3-sidebar w3-light-grey w3-bar-block w3-card">
+          <button onclick="hide('side-navbar')" class="w3-bar-item w3-button w3-hide-large">Close &times;</button>
+          <div class="w3-bar w3-light-blue">
+            <h3 class="w3-bar-item">Control Panel</h3>
+          </div>
+          <div class="w3-bar w3-pale-blue">
+            <h5 class="w3-bar-item">Projects</h5>
+          </div>
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+        <div id="main-content" class="margin-left-15">
+            <header class="w3-container w3-row w3-blue w3-center">
+                <button id="side-navbar-button" class="w3-left w3-large w3-button w3-hover-blue" onclick="show('side-navbar')"><i class="fas fa-bars"></i></button>
+                <h1 class="w3-large">My Little Project - Design (W3.CSS)</h1>
+            </header>
+            <nav class="w3-bar w3-black w3-row">
+                <div class="w3-hide-small">
+                    <a href=".." class="w3-hover-cyan w3-bar-item w3-button w3-mobile" target="_blank">View Website</a>
+                    <div class="w3-dropdown-click w3-right">
+                        <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle('user-profile-dropdown-card')">
+                            Dantcho
+                        </button>
+                        <div id="user-profile-dropdown-card" class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button">Profile</a>
+                            <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="navigation-elements" class="w3-hide w3-hide-large w3-hide-medium">
+                    <a href="./index" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Home</a>
+                    <a href="./projects" class="w3-hover-cyan w3-bar-item w3-button w3-mobile">Projects</a>
+                    <a href="./login" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Login</a>
+                    <a href="./register" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile">Register</a>
+                    <div class="w3-dropdown-click w3-mobile">
+                        <button class="w3-hover-cyan w3-button" onclick="userProfileButtonDropdownToggle('user-profile-dropdown-card-mobile')">
+                            Dantcho
+                        </button>
+                        <div id="user-profile-dropdown-card-mobile" class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="./profile" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Profile</a>
+                            <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="w3-bar-item w3-hover-cyan w3-button w3-mobile">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <a id="navigation-collapse-button" href="javascript:void(0)" class="w3-hover-cyan w3-right w3-bar-item w3-button w3-mobile w3-hide-large w3-hide-medium" onclick="collapseNavigationBar()">Menu</a>
+                <form id="logout-form" action="logout" method="POST" style="display: none;"></form>
+            </nav>
+            <section class="w3-container w3-dark-grey padding-top-16 w3-row">
+                <div class="w3-container w3-content w3-mobile">
+                    <div class="w3-panel w3-green w3-display-container margin-top-0 w3-card-4">
+                        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <h3>Example Alert!</h3>
+                        <p>This is an example of an alert.</p>
+                    </div>
+                </div>
+                <div class="w3-container w3-content w3-mobile w3-margin-bottom">
+                    <div class="w3-card w3-white">
+                        <header class="w3-container w3-blue">
+                            <div>Header</div>
+                        </header>
+                        <div class="w3-container">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida bibendum ipsum id mollis. Nulla nulla tellus, eleifend sed dui eu, dignissim aliquet eros. Integer ultrices turpis ac mi scelerisque, id aliquam libero ultricies. Etiam finibus orci sed quam ultrices aliquam. Integer porttitor rutrum libero in suscipit. Sed quis auctor mi. Proin diam orci, fringilla vitae pharetra sed, consectetur vel ante.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida bibendum ipsum id mollis. Nulla nulla tellus, eleifend sed dui eu, dignissim aliquet eros. Integer ultrices turpis ac mi scelerisque, id aliquam libero ultricies. Etiam finibus orci sed quam ultrices aliquam. Integer porttitor rutrum libero in suscipit. Sed quis auctor mi. Proin diam orci, fringilla vitae pharetra sed, consectetur vel ante.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida bibendum ipsum id mollis. Nulla nulla tellus, eleifend sed dui eu, dignissim aliquet eros. Integer ultrices turpis ac mi scelerisque, id aliquam libero ultricies. Etiam finibus orci sed quam ultrices aliquam. Integer porttitor rutrum libero in suscipit. Sed quis auctor mi. Proin diam orci, fringilla vitae pharetra sed, consectetur vel ante.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida bibendum ipsum id mollis. Nulla nulla tellus, eleifend sed dui eu, dignissim aliquet eros. Integer ultrices turpis ac mi scelerisque, id aliquam libero ultricies. Etiam finibus orci sed quam ultrices aliquam. Integer porttitor rutrum libero in suscipit. Sed quis auctor mi. Proin diam orci, fringilla vitae pharetra sed, consectetur vel ante.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida bibendum ipsum id mollis. Nulla nulla tellus, eleifend sed dui eu, dignissim aliquet eros. Integer ultrices turpis ac mi scelerisque, id aliquam libero ultricies. Etiam finibus orci sed quam ultrices aliquam. Integer porttitor rutrum libero in suscipit. Sed quis auctor mi. Proin diam orci, fringilla vitae pharetra sed, consectetur vel ante.</p>
+                        </div>
+                        <footer class="w3-container w3-blue">
+                            <div>Footer</div>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+            <footer class="w3-container w3-black w3-padding w3-row">
+                <div class="w3-bar">
+                    <div class="w3-center">Copyright <a href="https://github.com/Dantcho-BG/MyLittleProject" target="_blank">My Little Project</a> 2018</div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="../js/navigation-bar.js"></script>
+    <script src="../js/side-navigation-bar.js"></script>
+    <!-- <script src="js/slide-show.js"></script> -->
+</html>
