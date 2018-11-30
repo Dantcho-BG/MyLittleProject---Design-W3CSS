@@ -1,6 +1,6 @@
 # MyLittleProject Design - W3CSS
 
-This design is used in the MyLittleProject website as the default design when the project is installed.
+This was the default design that came with the MLP project, but was replaced by a Bootstrap design.
 
 ## Built With
 
