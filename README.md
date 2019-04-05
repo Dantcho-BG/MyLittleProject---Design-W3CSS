@@ -10,4 +10,4 @@ This was the default design that came with the MLP project, but was replaced by 
 
 ## Authors
 
-* **Yordan Hristov** - *Initial work* - [Dantcho](https://github.com/Dantcho-BG)
+* **Yordan Hristov** - *Initial work* - [Dantcho](https://github.com/DantchoLV9)
